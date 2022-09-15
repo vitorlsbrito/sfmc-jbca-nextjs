@@ -8,7 +8,7 @@
     ];
     var currentStep = steps[0].key;
 
-    $(window).ready(onRender);
+    window.onload = onRender;
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
