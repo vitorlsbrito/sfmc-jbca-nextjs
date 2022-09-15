@@ -1,8 +1,3 @@
-define([
-    'postmonger'
-], function (
-    Postmonger
-) {
     'use strict';
 
     var connection = new Postmonger.Session();
@@ -101,4 +96,3 @@ define([
         console.log("Payload on SAVE function: " + JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
     }
-});
